@@ -27,8 +27,8 @@ estimatesRouter
       .catch(next)
   })
   .post(jsonParser, (req, res, next) => {
-    const addEstimate = req.body
-    const newEstimate = addEstimate
+    const { project_id, name, contractor_name, price, details, total_time } = req.body
+    const newEstimate = { project_id, name, contractor_name, price, details, total_time }
 
     for (const [key, value] of Object.entries(newEstimate))
       if (value == null)
@@ -81,8 +81,8 @@ estimatesRouter
       .catch(next)
   })
   .patch(jsonParser, (req, res, next) => {
-    const editEstimate = req.body
-    const estimateToUpdate = editEstimate
+    const { project_id, name, contractor_name, price, details, total_time } = req.body
+    const estimateToUpdate = { project_id, name, contractor_name, price, details, total_time }
     const numberOfValues = Object.values(estimateToUpdate).filter(Boolean).length
     if (numberOfValues === 0) {
       return res.status(400).json({
