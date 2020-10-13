@@ -58,8 +58,8 @@ projectsRouter
       req.app.get('db'),
       req.params.project_id
     )
-      .then(projects => {
-        if (!projects) {
+      .then(project => {
+        if (!project) {
           return res.status(404).json({
             error: { message: `Project doesn't exist` }
           });
