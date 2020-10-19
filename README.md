@@ -1,26 +1,49 @@
-# Express Boilerplate!
+# MyHomeReno!
 
-This is a boilerplate project used for starting new projects!
+## Live Link
 
-## Set up
+https://myhomereno.vercel.app/
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+## App GitHub
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+https://github.com/rdisalle/myhomereno-api.git
 
-## Scripts
+## Technology
+* React
+* CSS3
+* Node
+* PostgreSQL
+* RESTful APIs
+* Heroku
+* Vercel
 
-Start the application `npm start`
+## Summary
 
-Start nodemon for the application `npm run dev`
+1. Keep track of your projects and project estimates all in one place
+2. Click "View Projects" below
+3. On the view projects page, press "Add Project" and fill in the information.
+4. Once you have a project added, you will have the ability to add estimates to the project.
+5. To add an estimate, press "Add Estimate" and fill out the information.
+6. Once done, you will be able to view that estimate under the estimate selected.
 
-Run the tests `npm test`
+Within projects, you can store and compare estimates and choose the best one for you.
 
-## Deploying
+## API Endpoints
+The API endpoints used are below:
+* /projects - Used for get and post requests
+* /projects/:estimate_id - Used for get, delete, and patch requests.
+* /estimates - Used for get and post requests
+* /estimates/:estimate_id - Used for get, delete, and patch requests.
 
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+## Screenshots
+![Landing Page](/Images/landing_page.png)
+![View Projects Page](/Images/view_projects.png)
+![View Projects Page](/Images/view_projects_2.png)
+![View Project](/Images/view_project.png)
+![Add Project](/Images/add_project_.png)
+![Edit Project](/Images/edit_project.png)
+![View Estimates](/Images/view_estimates.png)
+![View Estimate](/Images/view_estimate.png)
+![Add Estimate](/Images/add_estimate.png)
+![Edit Estimate](/Images/edit_estimate.png)
+
